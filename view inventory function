@@ -1,0 +1,19 @@
+def view_inventory(
+        product_name: str = "name", 
+        order: str = "ASC", 
+        category: str | None = None, 
+        min_qty: int | None=None,
+        max_pce: float | None=None
+):
+
+    inventory = [
+        {"name": "Apples", "quantity": 50, "price": 0.5, "category": "Fruit"},
+        {"name": "Bananas", "quantity": 20, "price": 0.3, "category": "Fruit"},
+        {"name": "Oranges", "quantity": 0, "price": 0.6, "category": "Fruit"},
+        {"name": "Milk", "quantity": 15, "price": 1.2, "category": "Dairy"},
+        {"name": "Bread", "quantity": 30, "price": 1.0, "category": "Baked Goods"},
+        {"name": "Cheese", "quantity": 5, "price": 2.5, "category": "Dairy"},
+        ]
+    return inventory
+    
+print(view_inventory())
